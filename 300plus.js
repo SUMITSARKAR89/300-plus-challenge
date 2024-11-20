@@ -76,3 +76,36 @@ function remdomGenerateHexColor(){
 
     return `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
 } 
+
+
+// ----------- project four (copy and paste the color code)----------
+
+window.onload = () => {
+    main()
+}
+
+function main(){
+    const colorBtn = document.getElementById("color-btn");
+    const createColor = document.getElementById("create-color"); 
+    const input = document.getElementById("input-option"); 
+    const copyBtn = document.getElementById("copy-btn"); 
+
+    colorBtn.addEventListener("click", function(){
+        let bgColor = generateHexCopyColor();
+        createColor.style.backgroundColor = bgColor;
+        input.value = bgColor;
+    });
+
+    colorBtn.addEventListener("click", function(){
+
+        navigator.clipboard.writeText(input.value);
+    })
+}
+
+function generateHexCopyColor (){
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+
+    return `#${red.toString(16)}${green.toString(16)}${blue.toString(16)}`
+}
