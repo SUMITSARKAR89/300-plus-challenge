@@ -45,7 +45,7 @@ h2{
 }
 
 /* =====================project 1========================= */
-/* =====================color btn========================= */
+/* =====================random background color========================= */
 #color-btn{
     display: block;
     border: 0;
@@ -64,4 +64,14 @@ h2{
     margin: 2px 0 0 0;
     color: antiquewhite;
     background-color: black;
+}
+#input-option{
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: default;
+}
+#input-option:hover{
+    background-color: azure;
+    border: 1px solid rgb(230, 112, 112);
 }

@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
     document.body.style.backgroundColor = generateRandomCol()
 } );
 
-// ----------- project one Other option (for change only selected part)----------
+// ----------- project two (for change only selected part)----------
 // steps 1 create onload function
 
 const colorBtn = document.getElementById("color-btn");
@@ -45,3 +45,34 @@ function main(){
 
     })
 }
+
+
+
+// ----------- project three (for mark the color vlaue)----------
+window.onload = () =>{
+    main()
+}
+
+const colorBtn = document.getElementById("color-btn");
+const createColor = document.getElementById("create-color"); 
+const input = document.getElementById("input-option"); 
+
+
+function main(){
+   
+    colorBtn.addEventListener("click", function(){
+        let bgColor = remdomGenerateHexColor();
+        createColor.style.backgroundColor = bgColor;
+        input.value = bgColor
+    })
+    
+
+}
+
+function remdomGenerateHexColor(){
+    const r = Math.floor(Math.random() *255);
+    const g = Math.floor(Math.random() *255);
+    const b = Math.floor(Math.random() *255);
+
+    return `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`;
+} 
