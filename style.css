@@ -29,7 +29,7 @@ section{
 }
 #create-color{
     max-width: 80%;
-    margin: 0 auto;
+    margin: 3% auto;
     height: 60vh;
     background-color: #e0dedeec;
     text-align: center;
@@ -38,6 +38,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    position: relative;
     
 }
 h2{
@@ -61,7 +62,7 @@ h2{
 
 }
 #color-btn:hover{
-    margin: 2px 0 0 0;
+    
     color: antiquewhite;
     background-color: black;
 }
@@ -93,4 +94,57 @@ h2{
     background-color: aquamarine;
     padding: 4px 13px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* --------------------------------------- */
+.toast-msg{
+    width: 150px;
+    height: 40px;
+    display: block;
+    opacity: 0.8;
+    margin: 0 auto;
+    color: #000;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 151, 0.541) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.432) 0px 18px 36px -18px inset;
+}
+.toast-msg:hover{
+    margin-top: 2px;
+    width: 153px;
+}
+.toast-msg-in{
+    animation: toast-msg-in 0.5s ease-in;
+}
+@keyframes toast-msg-in {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+
+    }
+}
+.toast-msg-out{
+    animation: toast-msg-out 0.5s ease-in;
+}
+@keyframes toast-msg-out {
+    from{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(200px);
+        opacity: 0;
+    }
 }
