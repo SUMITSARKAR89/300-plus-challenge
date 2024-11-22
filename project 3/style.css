@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: #dddeee;
+}
+.container{
+    max-width: 40%;
+    height: auto;
+    margin: 5% auto;
+    padding:  2%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(17, 1, 1, 0.411);
+}
+.head h1{
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: rgba(228, 93, 93, 0.164);
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: blue;
+    
+}
+.btn-grp{
+    padding: 5px 10px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.btn-grp button{
+    padding: 5px 20px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid rgba(57, 57, 201, 0.507);
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+.submit-btn{
+    background-color: rgba(68, 192, 68, 0.945);
+}
+.reset-btn{
+    background-color: #a55555;
+}
+.submit-btn:hover, 
+.reset-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: bisque;
+    color: blue;
+}
+.body{
+    background-color: #f5efefc4;
+    padding: 5px;
+   
+    margin: 5px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 2px;
+}
+.body label{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+.input-text{
+    width: 60%;
+    padding: 5px;
+    color: #4d0505;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(226, 184, 184);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.result-body{
+    margin: 3% 0;
+    background-color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+}
